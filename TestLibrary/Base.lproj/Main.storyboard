@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NEC-R7-fTp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否展示空相册：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc8-vh-gmy">
+                                <rect key="frame" x="60" y="144" width="114.5" height="27"/>
+                                <color key="backgroundColor" red="0.008368053944" green="0.7843137255" blue="0.73577646109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="P67-IO-CBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否展示视频：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htY-ic-DH0">
+                                <rect key="frame" x="60" y="204" width="114.5" height="29"/>
+                                <color key="backgroundColor" red="0.008368053944" green="0.7843137255" blue="0.73577646109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="gb3-O9-vcV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPV-Tb-tXr">
+                                <rect key="frame" x="269.5" y="142" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchOneAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="P7b-Vx-jLX"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2u-ks-sOy">
+                                <rect key="frame" x="269.5" y="202" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchTwoAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="UfX-Io-77v"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTR-D4-yaq">
+                                <rect key="frame" x="166.5" y="602" width="41" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HEY-52-67o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="相册">
+                                    <color key="titleColor" red="1" green="0.150029252" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWW-Bb-RXj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先展示所有照片：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny3-eS-65l">
+                                <rect key="frame" x="60" y="266" width="115" height="29"/>
+                                <color key="backgroundColor" red="0.008368053944" green="0.7843137255" blue="0.73577646109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIH-SN-QA0">
+                                <rect key="frame" x="270" y="266" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchThreeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="sWj-3K-rhd"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否展示Gif相册:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JK-mY-15f">
+                                <rect key="frame" x="60" y="324" width="115" height="29"/>
+                                <color key="backgroundColor" red="0.008368053944" green="0.7843137255" blue="0.73577646109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="adx-di-868">
+                                <rect key="frame" x="271" y="323" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchFourAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="SYI-z4-leF"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否展示多选功能：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXf-qt-0hc">
+                                <rect key="frame" x="60" y="381" width="129" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.93060909140000003" blue="0.16100876650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1h1-mt-5OR">
+                                <rect key="frame" x="269" y="381" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchFiveAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="raI-CJ-Tao"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H2u-ks-sOy" firstAttribute="centerY" secondItem="htY-ic-DH0" secondAttribute="centerY" constant="-1" id="0FL-x0-VVj"/>
+                            <constraint firstItem="1h1-mt-5OR" firstAttribute="leading" secondItem="JXf-qt-0hc" secondAttribute="trailing" constant="80" id="5iv-tL-n2q"/>
+                            <constraint firstItem="kIH-SN-QA0" firstAttribute="top" secondItem="H2u-ks-sOy" secondAttribute="bottom" constant="33" id="78u-ff-2af"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1JK-mY-15f" secondAttribute="trailing" constant="20" symbolic="YES" id="7zD-8g-X0f"/>
+                            <constraint firstItem="gc8-vh-gmy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="9MY-C2-13l"/>
+                            <constraint firstItem="htY-ic-DH0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="9Wi-gN-Rfb"/>
+                            <constraint firstItem="1JK-mY-15f" firstAttribute="width" secondItem="ny3-eS-65l" secondAttribute="width" id="DS0-Ck-7lB"/>
+                            <constraint firstItem="1JK-mY-15f" firstAttribute="height" secondItem="ny3-eS-65l" secondAttribute="height" id="EQq-cX-mRO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GTR-D4-yaq" secondAttribute="bottom" constant="35" id="KaB-0z-WR0"/>
+                            <constraint firstItem="1h1-mt-5OR" firstAttribute="top" secondItem="adx-di-868" secondAttribute="bottom" constant="27" id="O38-mB-7kZ"/>
+                            <constraint firstItem="ny3-eS-65l" firstAttribute="height" secondItem="htY-ic-DH0" secondAttribute="height" id="RrJ-aO-Gj0"/>
+                            <constraint firstItem="adx-di-868" firstAttribute="leading" secondItem="1JK-mY-15f" secondAttribute="trailing" constant="96" id="TKp-HD-x9m"/>
+                            <constraint firstItem="CPV-Tb-tXr" firstAttribute="centerY" secondItem="gc8-vh-gmy" secondAttribute="centerY" id="TQW-fv-mun"/>
+                            <constraint firstItem="JXf-qt-0hc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="YOD-Jk-O06"/>
+                            <constraint firstItem="ny3-eS-65l" firstAttribute="width" secondItem="htY-ic-DH0" secondAttribute="width" id="a0n-iK-9Dh"/>
+                            <constraint firstItem="gc8-vh-gmy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="dTh-bM-Uh3"/>
+                            <constraint firstItem="1JK-mY-15f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="gZe-Dg-M7n"/>
+                            <constraint firstItem="kIH-SN-QA0" firstAttribute="leading" secondItem="ny3-eS-65l" secondAttribute="trailing" constant="95" id="iY2-DY-Pk9"/>
+                            <constraint firstItem="JXf-qt-0hc" firstAttribute="top" secondItem="1JK-mY-15f" secondAttribute="bottom" constant="28" id="j1d-Gc-XNX"/>
+                            <constraint firstItem="H2u-ks-sOy" firstAttribute="leading" secondItem="htY-ic-DH0" secondAttribute="trailing" constant="95" id="lhv-RE-Tbt"/>
+                            <constraint firstItem="ny3-eS-65l" firstAttribute="top" secondItem="htY-ic-DH0" secondAttribute="bottom" constant="33" id="lq4-9D-zIa"/>
+                            <constraint firstItem="adx-di-868" firstAttribute="top" secondItem="kIH-SN-QA0" secondAttribute="bottom" constant="26" id="ltB-bQ-f4u"/>
+                            <constraint firstItem="JXf-qt-0hc" firstAttribute="height" secondItem="1JK-mY-15f" secondAttribute="height" id="ptq-Rt-4I8"/>
+                            <constraint firstItem="1JK-mY-15f" firstAttribute="top" secondItem="ny3-eS-65l" secondAttribute="bottom" constant="29" id="rv7-FG-V4Z"/>
+                            <constraint firstItem="htY-ic-DH0" firstAttribute="top" secondItem="gc8-vh-gmy" secondAttribute="bottom" constant="33" id="tTE-O1-pFs"/>
+                            <constraint firstItem="htY-ic-DH0" firstAttribute="width" secondItem="gc8-vh-gmy" secondAttribute="width" id="tgY-vh-U7k"/>
+                            <constraint firstItem="CPV-Tb-tXr" firstAttribute="leading" secondItem="gc8-vh-gmy" secondAttribute="trailing" constant="95" id="uya-8E-dS6"/>
+                            <constraint firstItem="GTR-D4-yaq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zIu-5G-bKG"/>
+                            <constraint firstItem="ny3-eS-65l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="zy3-VR-FOS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m13-zr-GlO"/>
+                    <connections>
+                        <outlet property="switchFive" destination="1h1-mt-5OR" id="5E3-b0-qah"/>
+                        <outlet property="switchFour" destination="adx-di-868" id="f2r-2P-GLp"/>
+                        <outlet property="switchOne" destination="CPV-Tb-tXr" id="Nmm-rH-HRD"/>
+                        <outlet property="switchThree" destination="kIH-SN-QA0" id="Bng-Qo-HK9"/>
+                        <outlet property="switchTwo" destination="H2u-ks-sOy" id="Uha-H6-gby"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.19999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wIn-K8-QvO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NEC-R7-fTp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qmW-vS-fr5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pef-yL-3NJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USU-wU-Nfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.19999999999999" y="132.23388305847078"/>
+        </scene>
+    </scenes>
+</document>
