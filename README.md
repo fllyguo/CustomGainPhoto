@@ -5,5 +5,6 @@
 
 ###  [我的简书](https://www.jianshu.com/u/77bbcf25cb53)
 
+## 示例
 ![20180320-143218-HD.gif](https://github.com/fllyguo/CustomGainPhoto/blob/master/Snapshots/20180320-143218-HD.gif)
 
