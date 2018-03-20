@@ -4,5 +4,5 @@
 3. 有时间还会添加更多好玩的东西进去，这里只是学习使用
 
 ## 示例
-![20180320-143218-HD.gif](https://github.com/fllyguo/CustomGainPhoto/blob/master/Snapshots/20180320-143218-HD.gif)
+![](https://github.com/fllyguo/CustomGainPhoto/blob/master/Snapshots/20180320-143218-HD.gif)
 
