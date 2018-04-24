@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "TestLibrary-Swift.h"
 #import "ClassifyPhotoLibraryViewController.h"
+#import "EditViewController.h" /* 图片编辑 */
+#import "TrimVideoViewController.h" /* 视频剪辑 */
+#import "GifViewController.h"/* 动图播放 */
 
 @interface ViewController ()<moreInfoDelegate>
 @property (weak, nonatomic) IBOutlet UISwitch *switchOne;
@@ -55,13 +58,31 @@
         classifyVc.libraryType = AllLibraryCollection;
     }
     classifyVc.delegate = self;
+//    classifyVc.isNoReturnOriginal = YES;
     classifyVc.isNoEmpty = self.isNoEmtpy;//是否展示空相册
     classifyVc.isNoLibraryInVideo = self.isShowVideo;//是否展示视频
     classifyVc.isNoGifLibraryCpllection = self.isShowGif;//是否展示gif
     classifyVc.isNoMoreSelectFunction = self.isShowMore;
 //    classifyVc.setMoreSelectNumber = 10;
+    __weak typeof (self)weakSelf = self;
     classifyVc.selectLibraryResourceBlock = ^(UIImage *image, NSURL *url, NSData *data) {
         NSLog(@"image:%@, url:%@, data:%@", image, url, data);
+        if (image != nil) {
+            //测试使用，跳转操作
+            EditViewController *editVc = [[EditViewController alloc] init];
+            editVc.image = image;
+            [weakSelf presentViewController:editVc animated:YES completion:nil];
+        }else if (url != nil){
+            //测试使用、跳转操作
+            TrimVideoViewController *trimVc = [[TrimVideoViewController alloc] init];
+            trimVc.URL = url;
+            [weakSelf presentViewController:trimVc animated:YES completion:nil];
+        }else{
+            //测试使用，跳转操作
+            GifViewController *gifVc = [[GifViewController alloc] init];
+            gifVc.gifData = data;
+            [weakSelf.navigationController pushViewController:gifVc animated:YES];
+        }
     };
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:classifyVc];
     [self presentViewController:nav animated:YES completion:nil];

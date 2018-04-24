@@ -13,9 +13,6 @@
 
 #import "AllPhotoLibraryListViewController.h"
 #import "AllPhotoLibraryCollectionViewCell.h"
-#import "EditViewController.h" /* 图片编辑 */
-#import "TrimVideoViewController.h" /* 视频剪辑 */
-#import "GifViewController.h"/* 动图播放 */
 #import "UIViewController+BackButtonHandler.h"/* 系统返回按钮方法 */
 #import "AssetsHelper.h"
 #import "WKWAsset.h"
@@ -130,7 +127,7 @@ typedef enum : NSUInteger {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     //此处为单项点击 (selectType 选择，还是取消选择)
     [self judgeSelectTypeIsNo:NO indexItem:indexPath.item selectType:AddSelectRes];
-    //    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 #pragma mark ------- 多选图片 delegate
 - (void)selectSomeResourceIndexRowBut:(UIButton *)indexBut {
@@ -183,7 +180,7 @@ typedef enum : NSUInteger {
 //视频 (isNoMoreChoice 是否为多选按钮，YES/NO 有不同操作. 单选点击直接返回资源数据 ，多项选择:多选之后点击 '完成'，返回所有点击资源)
 - (void)enterVideosVcAsset:(PHAsset *)asset isNoMoreChoice:(BOOL)isNo videosType:(MoreSelectType)videosType {
     //如果为视频文件，则获取 url
-    __weak typeof(self)WeakSelf = self;
+//    __weak typeof(self)WeakSelf = self;
     PHVideoRequestOptions *videoRequestOptions = [[PHVideoRequestOptions alloc] init];
     videoRequestOptions.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;
     [[PHImageManager defaultManager] requestAVAssetForVideo:asset options:videoRequestOptions resultHandler:^(AVAsset * _Nullable asset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
@@ -204,10 +201,6 @@ typedef enum : NSUInteger {
                 if ([self.delegate respondsToSelector:@selector(selectVideosUrl:)]) {
                     [self.delegate selectVideosUrl:((AVURLAsset *)asset).URL];
                 }
-                //测试使用、跳转操作
-                TrimVideoViewController *trimVc = [[TrimVideoViewController alloc] init];
-                trimVc.URL = ((AVURLAsset *)asset).URL;
-                [WeakSelf presentViewController:trimVc animated:YES completion:nil];
             }
         }
     }];
@@ -231,22 +224,25 @@ typedef enum : NSUInteger {
         if ([self.delegate respondsToSelector:@selector(selectGifImageData:)]) {
             [self.delegate selectGifImageData:data];
         }
-        //测试使用，跳转操作
-        GifViewController *gifVc = [[GifViewController alloc] init];
-        gifVc.gifData = data;
-        [self.navigationController pushViewController:gifVc animated:YES];
     }
 }
 //UIImage (isNoMoreChoice 是否为多选按钮，YES/NO 有不同操作.  单选点击直接返回资源数据 ，多项选择:多选之后点击 '完成'，返回所有点击资源)
 - (void)enterImageEditVcAsset:(PHAsset *)asset isNoMoreChoice:(BOOL)isNo imageType:(MoreSelectType)imageType{
     //UIImage 图片
     UIImage *image;
-    if (asset.pixelWidth > 100 || asset.pixelWidth <= 1000) {
-        image = [self.assetObj smallImageSize:CGSizeMake(100, 100) asset:asset];
-    }else{
+    NSData *imageData;
+    //返回原图
+    if (self.isNoReturnOr == YES) {
         image = [self.assetObj originalImage:asset];
+    } else {
+        if (asset.pixelWidth > 100 || asset.pixelWidth <= 1000) {
+            image = [self.assetObj smallImageSize:CGSizeMake(100, 100) asset:asset];
+        }else{
+            image = [self.assetObj originalImage:asset];
+        }
+        //多选是压缩后的图片，要是使用原图，可能NSData会很大，不便于操作
+        imageData = UIImageJPEGRepresentation(image, 1);
     }
-    NSData *imageData = UIImageJPEGRepresentation(image, 1);
     //点击多选使用
     if (isNo == YES) {
         if (imageType == AddSelectRes) {
@@ -262,10 +258,6 @@ typedef enum : NSUInteger {
         if ([self.delegate respondsToSelector:@selector(selectPhotoLibraryImage:)]) {
             [self.delegate selectPhotoLibraryImage:image];
         }
-        //测试使用，跳转操作
-        EditViewController *editVc = [[EditViewController alloc] init];
-        editVc.image = image;
-        [self presentViewController:editVc animated:YES completion:nil];
     }
 }
 #pragma mark ----------------------- 系统相册图片 ------------------------

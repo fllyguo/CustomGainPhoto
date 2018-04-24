@@ -23,6 +23,7 @@
 
 @interface AllPhotoLibraryListViewController : UIViewController
 
+@property (nonatomic, assign)BOOL isNoReturnOr;//是否返回原图
 @property (nonatomic, assign)BOOL isNoDirectAccess;//是否直接进入所有照片
 @property (nonatomic, assign)BOOL isNoShowMore;//是否展示多选功能
 @property (nonatomic, assign)NSInteger setMoreNum;//设置多选数量

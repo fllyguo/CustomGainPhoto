@@ -30,6 +30,9 @@
 		40515F2E201B29030076C4AF /* NSObject+PhotoJurisdiction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40515F2A201B29030076C4AF /* NSObject+PhotoJurisdiction.m */; };
 		40515F2F201B29030076C4AF /* AssetsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 40515F2C201B29030076C4AF /* AssetsHelper.m */; };
 		40515F30201B29030076C4AF /* WKWAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 40515F2D201B29030076C4AF /* WKWAsset.m */; };
+		409A031D206F349600FC38A1 /* noSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 409A031A206F349500FC38A1 /* noSelect.png */; };
+		409A031E206F349600FC38A1 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 409A031B206F349500FC38A1 /* select.png */; };
+		409A031F206F349600FC38A1 /* libraryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 409A031C206F349500FC38A1 /* libraryLogo.png */; };
 		40ADF5992023F2E600216589 /* JPImageresizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5902023F2E600216589 /* JPImageresizerView.m */; };
 		40ADF59A2023F2E600216589 /* UIImage+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5912023F2E600216589 /* UIImage+JPExtension.m */; };
 		40ADF59B2023F2E600216589 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF5922023F2E600216589 /* .gitkeep */; };
@@ -110,6 +113,9 @@
 		40515F2B201B29030076C4AF /* WKWAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWAsset.h; sourceTree = "<group>"; };
 		40515F2C201B29030076C4AF /* AssetsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsHelper.m; sourceTree = "<group>"; };
 		40515F2D201B29030076C4AF /* WKWAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWAsset.m; sourceTree = "<group>"; };
+		409A031A206F349500FC38A1 /* noSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noSelect.png; sourceTree = "<group>"; };
+		409A031B206F349500FC38A1 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
+		409A031C206F349500FC38A1 /* libraryLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = libraryLogo.png; sourceTree = "<group>"; };
 		40ADF5902023F2E600216589 /* JPImageresizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageresizerView.m; sourceTree = "<group>"; };
 		40ADF5912023F2E600216589 /* UIImage+JPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JPExtension.m"; sourceTree = "<group>"; };
 		40ADF5922023F2E600216589 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -253,6 +259,7 @@
 		40515F08201B14D20076C4AF /* CustomGainPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				409A0319206F344500FC38A1 /* Resource */,
 				4047AAED2027FC0E00FDAFC5 /* SystemBackButton */,
 				40515F28201B29030076C4AF /* AssetsHelper.h */,
 				40515F2C201B29030076C4AF /* AssetsHelper.m */,
@@ -284,6 +291,16 @@
 			);
 			path = "自定义获取相册照片";
 			sourceTree = SOURCE_ROOT;
+		};
+		409A0319206F344500FC38A1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				409A031C206F349500FC38A1 /* libraryLogo.png */,
+				409A031A206F349500FC38A1 /* noSelect.png */,
+				409A031B206F349500FC38A1 /* select.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
 		};
 		40ADF58E2023F2E600216589 /* JPImageresizerView */ = {
 			isa = PBXGroup;
@@ -492,11 +509,14 @@
 				400070B62015D96F003BDA2F /* LaunchScreen.storyboard in Resources */,
 				400070B32015D96F003BDA2F /* Assets.xcassets in Resources */,
 				40ADF5B7202405E300216589 /* .gitkeep in Resources */,
+				409A031D206F349600FC38A1 /* noSelect.png in Resources */,
+				409A031F206F349600FC38A1 /* libraryLogo.png in Resources */,
 				40ADF59D2023F2E600216589 /* .gitkeep in Resources */,
 				40ADF5B0202405E300216589 /* .gitkeep in Resources */,
 				40ADF5B6202405E300216589 /* trim.xcassets in Resources */,
 				400070B12015D96F003BDA2F /* Main.storyboard in Resources */,
 				40ADF59B2023F2E600216589 /* .gitkeep in Resources */,
+				409A031E206F349600FC38A1 /* select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

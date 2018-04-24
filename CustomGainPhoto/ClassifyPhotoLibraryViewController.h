@@ -34,6 +34,10 @@ typedef void(^selectLibraryBlock)(UIImage *image, NSURL *url, NSData *data);/* U
  */
 @property (nonatomic, assign)id<moreInfoDelegate>delegate;
 /**
+ * 是否返回原图 (默认 不返回原图， YES返回原图，NO 不返回原图)
+ */
+@property (nonatomic, assign)BOOL isNoReturnOriginal;
+/**
  * 是否获取相册中的视频 默认 不获取 (YES 获取，NO 不获取)
  */
 @property (nonatomic, assign)BOOL isNoLibraryInVideo;

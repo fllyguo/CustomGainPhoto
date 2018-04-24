@@ -39,6 +39,7 @@
                     allVc.title = @"相机胶卷";
                     allVc.isNoDirectAccess = YES;/* 直接进入所有照片 */
                     allVc.setMoreNum = self.setMoreSelectNumber;//设置数量
+                    allVc.isNoReturnOr = self.isNoReturnOriginal;//是否返回原图
                     allVc.delegate = self;
                     if (self.isNoMoreSelectFunction == YES) {
                         allVc.isNoShowMore = YES;
@@ -223,6 +224,7 @@
     AllPhotoLibraryListViewController *allVc = [[AllPhotoLibraryListViewController alloc] init];
     allVc.title = title;
     allVc.assetsModel = itemModel;
+    allVc.isNoReturnOr = self.isNoReturnOriginal;//是否返回原图
     allVc.isNoDirectAccess = isNoDir;/* 不是直接进入 */
     allVc.setMoreNum = self.setMoreSelectNumber;//设置多选数量
     allVc.delegate = self;
