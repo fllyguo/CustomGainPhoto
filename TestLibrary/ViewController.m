@@ -64,24 +64,29 @@
     classifyVc.isNoGifLibraryCpllection = self.isShowGif;//是否展示gif
     classifyVc.isNoMoreSelectFunction = self.isShowMore;
 //    classifyVc.setMoreSelectNumber = 10;
-    __weak typeof (self)weakSelf = self;
+//    __weak typeof (self)weakSelf = self;
     classifyVc.selectLibraryResourceBlock = ^(UIImage *image, NSURL *url, NSData *data) {
         NSLog(@"image:%@, url:%@, data:%@", image, url, data);
+        UIWindow *fK = [[UIApplication sharedApplication] keyWindow];
+        //如果window已有弹出的视图，会导致界面无法弹出，页面卡死，这里需要先把视图关闭，再弹出
+        if (fK.rootViewController.presentedViewController != nil) {
+            [fK.rootViewController dismissViewControllerAnimated:NO completion:nil];
+        }
         if (image != nil) {
             //测试使用，跳转操作
             EditViewController *editVc = [[EditViewController alloc] init];
             editVc.image = image;
-            [weakSelf presentViewController:editVc animated:YES completion:nil];
+            [fK.rootViewController presentViewController:editVc animated:YES completion:nil];
         }else if (url != nil){
             //测试使用、跳转操作
             TrimVideoViewController *trimVc = [[TrimVideoViewController alloc] init];
             trimVc.URL = url;
-            [weakSelf presentViewController:trimVc animated:YES completion:nil];
+            [fK.rootViewController presentViewController:trimVc animated:YES completion:nil];
         }else{
             //测试使用，跳转操作
             GifViewController *gifVc = [[GifViewController alloc] init];
             gifVc.gifData = data;
-            [weakSelf.navigationController pushViewController:gifVc animated:YES];
+            [fK.rootViewController.navigationController pushViewController:gifVc animated:YES];
         }
     };
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:classifyVc];

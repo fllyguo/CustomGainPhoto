@@ -35,17 +35,13 @@
 		409A031F206F349600FC38A1 /* libraryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 409A031C206F349500FC38A1 /* libraryLogo.png */; };
 		40ADF5992023F2E600216589 /* JPImageresizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5902023F2E600216589 /* JPImageresizerView.m */; };
 		40ADF59A2023F2E600216589 /* UIImage+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5912023F2E600216589 /* UIImage+JPExtension.m */; };
-		40ADF59B2023F2E600216589 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF5922023F2E600216589 /* .gitkeep */; };
 		40ADF59C2023F2E600216589 /* JPImageresizerFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5932023F2E600216589 /* JPImageresizerFrameView.m */; };
-		40ADF59D2023F2E600216589 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF5982023F2E600216589 /* .gitkeep */; };
 		40ADF5A02023F32F00216589 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF59E2023F32F00216589 /* EditViewController.m */; };
-		40ADF5B0202405E300216589 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF5A7202405E200216589 /* .gitkeep */; };
 		40ADF5B1202405E300216589 /* YGCTrimVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5A8202405E200216589 /* YGCTrimVideoControlView.m */; };
 		40ADF5B2202405E300216589 /* YGCThumbCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5A9202405E200216589 /* YGCThumbCollectionViewCell.m */; };
 		40ADF5B3202405E300216589 /* UIView+YGCFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5AA202405E200216589 /* UIView+YGCFrameUtil.m */; };
 		40ADF5B4202405E300216589 /* YGCTrimVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5AB202405E200216589 /* YGCTrimVideoView.m */; };
 		40ADF5B6202405E300216589 /* trim.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF5AE202405E200216589 /* trim.xcassets */; };
-		40ADF5B7202405E300216589 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF5AF202405E200216589 /* .gitkeep */; };
 		40ADF5BA20240A5400216589 /* TrimVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADF5B920240A5400216589 /* TrimVideoViewController.m */; };
 		6662E1B533766473A4C51157 /* Pods_TestLibraryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFE766C6DC869CE89FE8FDD /* Pods_TestLibraryUITests.framework */; };
 		AF6A423A8BD5465A0FB4028E /* Pods_TestLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9797BBBDA6F76C8447E9640B /* Pods_TestLibraryTests.framework */; };
@@ -118,25 +114,21 @@
 		409A031C206F349500FC38A1 /* libraryLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = libraryLogo.png; sourceTree = "<group>"; };
 		40ADF5902023F2E600216589 /* JPImageresizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageresizerView.m; sourceTree = "<group>"; };
 		40ADF5912023F2E600216589 /* UIImage+JPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JPExtension.m"; sourceTree = "<group>"; };
-		40ADF5922023F2E600216589 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		40ADF5932023F2E600216589 /* JPImageresizerFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageresizerFrameView.m; sourceTree = "<group>"; };
 		40ADF5942023F2E600216589 /* JPImageresizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageresizerView.h; sourceTree = "<group>"; };
 		40ADF5952023F2E600216589 /* JPImageresizerFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageresizerFrameView.h; sourceTree = "<group>"; };
 		40ADF5962023F2E600216589 /* UIImage+JPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JPExtension.h"; sourceTree = "<group>"; };
-		40ADF5982023F2E600216589 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		40ADF59E2023F32F00216589 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		40ADF59F2023F32F00216589 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		40ADF5A3202405E200216589 /* YGCTrimVideoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCTrimVideoControlView.h; sourceTree = "<group>"; };
 		40ADF5A4202405E200216589 /* YGCTrimVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCTrimVideoView.h; sourceTree = "<group>"; };
 		40ADF5A5202405E200216589 /* UIView+YGCFrameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGCFrameUtil.h"; sourceTree = "<group>"; };
 		40ADF5A6202405E200216589 /* YGCThumbCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCThumbCollectionViewCell.h; sourceTree = "<group>"; };
-		40ADF5A7202405E200216589 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		40ADF5A8202405E200216589 /* YGCTrimVideoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCTrimVideoControlView.m; sourceTree = "<group>"; };
 		40ADF5A9202405E200216589 /* YGCThumbCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCThumbCollectionViewCell.m; sourceTree = "<group>"; };
 		40ADF5AA202405E200216589 /* UIView+YGCFrameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGCFrameUtil.m"; sourceTree = "<group>"; };
 		40ADF5AB202405E200216589 /* YGCTrimVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCTrimVideoView.m; sourceTree = "<group>"; };
 		40ADF5AE202405E200216589 /* trim.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = trim.xcassets; sourceTree = "<group>"; };
-		40ADF5AF202405E200216589 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		40ADF5B820240A5400216589 /* TrimVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrimVideoViewController.h; sourceTree = "<group>"; };
 		40ADF5B920240A5400216589 /* TrimVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrimVideoViewController.m; sourceTree = "<group>"; };
 		6DB4F8C81EAB31042B1F8A10 /* Pods-TestLibraryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLibraryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestLibraryUITests/Pods-TestLibraryUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -306,7 +298,6 @@
 			isa = PBXGroup;
 			children = (
 				40ADF58F2023F2E600216589 /* Classes */,
-				40ADF5972023F2E600216589 /* Assets */,
 			);
 			path = JPImageresizerView;
 			sourceTree = "<group>";
@@ -316,21 +307,12 @@
 			children = (
 				40ADF5902023F2E600216589 /* JPImageresizerView.m */,
 				40ADF5912023F2E600216589 /* UIImage+JPExtension.m */,
-				40ADF5922023F2E600216589 /* .gitkeep */,
 				40ADF5932023F2E600216589 /* JPImageresizerFrameView.m */,
 				40ADF5942023F2E600216589 /* JPImageresizerView.h */,
 				40ADF5952023F2E600216589 /* JPImageresizerFrameView.h */,
 				40ADF5962023F2E600216589 /* UIImage+JPExtension.h */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		40ADF5972023F2E600216589 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				40ADF5982023F2E600216589 /* .gitkeep */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		40ADF5A1202405E200216589 /* YGCTrimVideoView */ = {
@@ -349,7 +331,6 @@
 				40ADF5A4202405E200216589 /* YGCTrimVideoView.h */,
 				40ADF5A5202405E200216589 /* UIView+YGCFrameUtil.h */,
 				40ADF5A6202405E200216589 /* YGCThumbCollectionViewCell.h */,
-				40ADF5A7202405E200216589 /* .gitkeep */,
 				40ADF5A8202405E200216589 /* YGCTrimVideoControlView.m */,
 				40ADF5A9202405E200216589 /* YGCThumbCollectionViewCell.m */,
 				40ADF5AA202405E200216589 /* UIView+YGCFrameUtil.m */,
@@ -362,7 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				40ADF5AE202405E200216589 /* trim.xcassets */,
-				40ADF5AF202405E200216589 /* .gitkeep */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -503,14 +483,10 @@
 			files = (
 				400070B62015D96F003BDA2F /* LaunchScreen.storyboard in Resources */,
 				400070B32015D96F003BDA2F /* Assets.xcassets in Resources */,
-				40ADF5B7202405E300216589 /* .gitkeep in Resources */,
 				409A031D206F349600FC38A1 /* noSelect.png in Resources */,
 				409A031F206F349600FC38A1 /* libraryLogo.png in Resources */,
-				40ADF59D2023F2E600216589 /* .gitkeep in Resources */,
-				40ADF5B0202405E300216589 /* .gitkeep in Resources */,
 				40ADF5B6202405E300216589 /* trim.xcassets in Resources */,
 				400070B12015D96F003BDA2F /* Main.storyboard in Resources */,
-				40ADF59B2023F2E600216589 /* .gitkeep in Resources */,
 				409A031E206F349600FC38A1 /* select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
